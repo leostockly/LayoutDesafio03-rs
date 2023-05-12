@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body::before {
+  content: '';
+  width: 100%;
+  height: 465px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #293241;
+}
+
+body {
+  background: #BFD7E4;
+}
+
+.page {
+  width: 750px;
+  margin: auto;
+}
+
+header {
+  width: 750px;
+  text-align: center;
+  margin-top: 107px;
+}
+
+h1, h2 {
+  font-family: 'Staatliches', cursive;
+  color: #FFFFFF;
+  font-size: 36px;
+  line-height: 45px;
+  font-weight: 400;
+}
+
+header p {
+  font-family: 'Poppins', sans-serif;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 46px;
+}
+
+main {
+  background: #F67669;
+  width: 750px;
+  height: 133px;
+  text-align: center;
+  border-radius: 20px 20px 0px 0px;
+
+  padding: 50px 275px;
+  margin-top: 32px;
+ 
+}
+
+h2 {
+  font-family: 'Staatliches', cursive;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+form {
+  background: #FAFAFC;
+  border-radius: 0px 0px 20px 20px;
+  padding: 32px 65px 0px;
+
+  display: flex;
+  flex-direction: column;
+  
+}
+
+fieldset {
+  border: none;
+  
+}
+
+.fieldset-wrapper {
+  display: flex;
+  gap: 22px;
+  
+}
+
+.input-wrapper {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+
+}
+
+.input-wrapper input, .input-wrapper-category select {
+background: #E6E6F0;
+border: 1px solid #E6E6F0;
+border-radius: 8px;
+box-sizing: border-box;
+
+height: 56px;
+width: 300px;
+
+font-size: 16px;
+line-height: 26px;
+
+color: #C1BCCC;
+
+}
+
+.input-wrapper label {
+  color: #4E4958;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  
+}
+
+.input-wrapper-mail input {
+  margin-top: 8px;
+}
+
+.input-wrapper-mail label, .input-wrapper-category label {
+  color: #4E4958;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.input-wrapper-mail label span {
+  margin-left: 9px;
+  font-size: 12px;
+  line-height: 20px;
+  
+  color: #C1BCCC;
+}
+
+.input-wrapper-mail input, .input-wrapper textarea {
+  background: #E6E6F0;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  height: 56px;
+  width: 622px;
+  padding: 8px;
+  font-size: 16px;
+  line-height: 26px;
+  
+  color: #C1BCCC;
+ 
+}
+
+fieldset legend {
+  font-family: 'Staatliches', cursive;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: #535971;
+  text-align: center;
+  padding-top: 32px;
+
+  width: 100%;
+  border-bottom: 1px solid #E6E6F0;
+  padding-bottom: 10px;
+}
+
+#f-email {
+  margin-top: 16px;
+}
+
+.input-wrapper-category {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper-category label {
+  margin-top: 32px;
+}
+
+.input-wrapper-category select {
+  appearance: none;
+  -webkit-appearance: none;
+  margin-top: 8px;
+
+}
+
+.input-wrapper textarea {
+  width: 608px;
+  height: 167px;
+}
+
+.checkbox-wrapper {
+  position: relative;
+  margin-top: 30px;
+ 
+ }
+
+ .checkbox-wrapper label {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  gap: 8px;
+  
+}
+
+ .checkbox-wrapper input:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1502_20)'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z' fill='%2342D3FF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1502_20'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+
+}
+
+.checkbox-wrapper input {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+}
+
+.checkbox-wrapper label::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+
+  display: block;
+
+  border: 1px solid #E6E6f0;
+  border-radius: 8px;
+}
+
+.checkbox-wrapper input:focus + label::before {
+  outline: 1px solid black;
+
+}
+
+.class-3 {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.class-3 > div:nth-child(1) {
+  width: 100%;
+}
+
+
+.class-3 .input-wrapper span {
+  text-transform: uppercase;
+  color: #C1BCCC;
+  font-size: 12px;
+  margin-left: 7px;
+}
+
+.input-wrapper-date input {
+  background: #E6E6F0;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  
+  margin-top: 8px;
+
+  height: 56px;
+  width: 140px;
+  padding: 8px;
+  font-size: 16px;
+  line-height: 26px;
+  
+  color: #C1BCCC;
+ 
+}
+
+button {
+  font-family: 'Staatliches', cursive;
+  font-size: 20px;
+  background: #F67669;
+  border-radius: 8px;
+  padding: 15px 40px;
+  color: #FFFFFF;
+  border: none;
+  margin: 64px 0px 64px;
+
+}
